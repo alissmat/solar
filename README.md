@@ -72,7 +72,7 @@ Only standard packages are used in this ETL.  There are instructions to install 
 
 * Conda (optional)
 
-#### Installing
+### Installing
 
 The package dependencies are available in `environment.yml`.  Run the following commands in the terminal to create an environment with the required packages if necessary.  Note you will need a Conda install.
 
@@ -80,7 +80,7 @@ The package dependencies are available in `environment.yml`.  Run the following 
 conda env create -f environment.yml
 ```
 
-You will need to select the 'solar' kernel for the notebook.
+This will create a Conda environment called 'solar' with the required packages installed.  This environment should be available as a kernel to run the Jupyter notebook (you may need to restart your script editor after installing).
 
 ## Help
 
