@@ -29,14 +29,31 @@ __File:__ `43256.pdf`
 
 
 ### Transformations
-This code aggregates the hourly GHI and DNI values in `tmy3.cs`v into weekly averages for each station.
+Hourly GHI and DNI values in `tmy3.csv` are aggregated into weekly mean values for each station.
 
 ### Outputs
 This code outputs a .json file at a given filepath.
 
-## Getting Started
+e.g.:
 
-### Executing program
+``` json
+[   
+    {  
+        "id": 690150,  
+        "site_name": "TWENTYNINE PALMS",  
+        "coordinates": [  
+            34.3,  
+            -116.167  
+        ],  
+        "data": [  
+            {  
+                "timestamp": 839116800000,  
+                "ghi": 337.5052631578947,  
+                "dni": 433.2526315789474  
+                ...
+```
+
+## Executing the code
 
 * Run the ETL from the Jupyter notebook `etl_solar.ipynb`.
 * Most code editors should be able to read notebooks.
@@ -44,7 +61,7 @@ This code outputs a .json file at a given filepath.
 
 ### Dependencies
 
-Only standard packages are used, and they should already be installed on your machine.  There are instructions to install dependencies if required under [Installing](#installing).
+Only standard packages are used in this ETL.  There are instructions to install dependencies if required under [Installing](#installing).
 
 * Python 3
     * datetime
@@ -55,7 +72,7 @@ Only standard packages are used, and they should already be installed on your ma
 
 * Conda (optional)
 
-### Installing
+#### Installing
 
 The package dependencies are available in `environment.yml`.  Run the following commands in the terminal to create an environment with the required packages if necessary.  Note you will need a Conda install.
 
@@ -70,8 +87,6 @@ You will need to select the 'solar' kernel for the notebook.
 Contact: alice.matthews@live.com.au
 
 ## Authors
-
-Contributors names and contact info
 
 Alice Matthews  
 [@alissmat](https://github.com/alissmat)
