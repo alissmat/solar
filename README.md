@@ -74,5 +74,5 @@ Contact: alice.matthews@live.com.au
 Contributors names and contact info
 
 Alice Matthews  
-[@DomPizzie](https://github.com/alismat)
+[@alissmat](https://github.com/alissmat)
 
