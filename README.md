@@ -53,7 +53,14 @@ e.g.:
                 ...
 ```
 
-## Executing the code
+## Set up
+
+### ⚠️ Kaggle config file
+Downloading datasets from Kaggle requires an API access token.  You can download this token through your Kaggle account settings.
+
+Save in "C:/user/<your_name>/.kaggle/kaggle.json"
+
+### Running the script
 
 * Run the ETL from the Jupyter notebook `etl_solar.ipynb`.
 * Most code editors should be able to read notebooks.
@@ -69,12 +76,13 @@ Only standard packages are used in this ETL.  There are instructions to install 
 
 * pandas
 * ipykernel
+* opendatasets
 
 * Conda (optional)
 
 ### Installing
 
-The package dependencies are available in `environment.yml`.  Run the following commands in the terminal to create an environment with the required packages if necessary.  Note you will need a Conda install.
+The package dependencies are available in `environment.yml`.  Run the following command in the terminal to create an environment with the required packages if necessary.  Note you will need a Conda install.
 
 ```
 conda env create -f environment.yml
