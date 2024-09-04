@@ -73,7 +73,6 @@ Only standard packages are used in this ETL.  There are instructions to install 
 * Python 3
     * datetime
     * json
-
 * pandas
 * ipykernel
 * opendatasets
